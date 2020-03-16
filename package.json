@@ -1,6 +1,10 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "start": "lerna exec --stream  -- yarn start",
+    "start:client": "cd packages/client && yarn start"
+  },
   "devDependencies": {
     "lerna": "^3.20.2"
   },

@@ -17,7 +17,7 @@ function App() {
     const [anchorEl, setAnchorEl] = React.useState(null)
 
     useEffect(() => {
-        const stream = new EventSource('http://localhost:3001/stream')
+        const stream = new EventSource(process.env.REACT_APP_ENDPOINT)
 
         stream.onmessage = event => {
             setNotifications(current => [JSON.parse(event.data), ...current])

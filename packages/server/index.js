@@ -28,7 +28,7 @@ app.get("/stream", (req, res) => {
                 image: faker.image.avatar(),
                 name: faker.name.findName()
             }
-        })}\n`)
+        })}\n\n`)
     }, 5000)
 })
 
