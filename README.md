@@ -1,6 +1,6 @@
 # Server side events
 
-This project was made verify the behavior of some notification Server-Side Event implementation with React.
+This project was made to verify the behavior of some notification Server-Side Event implementation with React.
 
 ## Getting Started
 
@@ -34,9 +34,9 @@ yarn
 
 ## Running the application
 
-This monorepo provides both the server and the client.
+This monorepo provides both server and client.
 
-To take both server and client up and running, just run this on the project root folder:
+To take both server and client up and running, just run this command on the project root folder:
 
 ```
 yarn start
@@ -48,7 +48,7 @@ If you want only to take the client up and running, you can run:
 yarn start:client
 ```
 
-To set a custom URL to the client, you can set it by an env var called `REACT_APP_ENDPOINT` (at `./packages/client/.env`), for example:
+If you nees a custom server URL, you can set it by changing the env var called `REACT_APP_ENDPOINT` at `./packages/client/.env`, for example:
 
 ```
 REACT_APP_ENDPOINT='my custom URL here'
