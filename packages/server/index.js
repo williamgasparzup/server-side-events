@@ -6,14 +6,16 @@ app.get('/', function (_, res) {
     res.send('Hello World!');
 });
 
-app.get("/stream", (req, res) => {
+app.get('/notifications', (req, res) => {
     res.set({
-        "Content-Type": "text/event-stream",
-        "Cache-Control": "no-cache",
-        Connection: "keep-alive",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers":
-            "Origin, X-Requested-With, Content-Type, Accept",
+        'Content-Type': 'text/event-stream',
+        'Cache-Control': 'no-cache',
+        'Connection': 'keep-alive',
+
+        // enabling CORS
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers':
+            'Origin, X-Requested-With, Content-Type, Accept',
     })
 
     setInterval(() => {
